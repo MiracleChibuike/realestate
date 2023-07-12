@@ -323,7 +323,7 @@ body{
     margin-bottom: 0;
     display: flex;
     background-color: var(--smoth-main-color);
-    width: 100%;
+    max-width: 100%;
 }
 .contactMessage{
     margin-left: 300px;
@@ -416,6 +416,7 @@ hr{
     text-align: center;
     padding: 20px;
     color: var(--white-color);
+    max-width: 100%;
 }
 .socialMediaIcons i{
     font-size: 20px;
@@ -620,13 +621,10 @@ footer i:hover{
     #nameInput,#emailInput, #messageAreaInput{
         width: 250px;
     }
-    hr{
-        margin: 0;
-    }
     /* Footer section */
     .foot{
         position: absolute;
-        top: 4700px;
+        top: 4820px;
         width: 100%;
     }
     .chatBot i{
