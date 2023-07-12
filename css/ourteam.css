@@ -1,0 +1,79 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --white-color: #fff;
+    --semi-white-color: antiquewhite;
+    --orange-color: #ffa500;
+    --dark-color: #020202;
+    --gray-color:  rgb(206, 206, 202);
+    --grren-color: #8ee88c;
+    --ash-white-smooth-color: #eaf6f6;
+    --dark-blue-color: rgb(15, 45, 82);
+}
+body{
+    font-family: 'Familjen Grotesk', sans-serif;
+    /* font-family: 'Jost', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif; */
+    /* background-color: rgb(175 175 160); */
+    /* background-color: var(--white-color); */
+    background-color: var(--ash-white-smooth-color);
+}
+/* ::-webkit-scrollbar{
+    background-color: var(--ash-white-smooth-color);
+} */
+.Ourteamheader{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 10px;
+}
+.teamCategory{
+    font-size: 1.7rem;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.teamsContainer{
+    display: flex;
+}
+.teamsContainer > div{
+    margin: 10px;
+}
+.teamsDescription1 div, .teamsDescription2 div, .teamsDescription3 div, .teamsDescription4 div{
+    background: var(--dark-blue-color);
+    width: 300px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    height: 350px;
+}
+ .team1Image, .team2Image, .team3Image, .team4Image{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+/* MEDIA QUERRY SECTION */
+/* FOR MOBILES */
+@media (width <=820px){
+    .ParentContainer{
+        overflow-x: scroll;
+        /* background-color: var(--orange-color); */
+        height: 450px;
+        margin: 10px;
+    }
+}
+/* FOR LITTLE SCREEN LAPTOPS */
+@media (width = 1024px){
+    .teamsContainer > div{
+        margin: 5px;
+    }
+    .teamsDescription4 div{
+        margin-right: 10px;
+    }
+    
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500&family=Jost:wght@400;500&family=Montserrat&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9b5c4c6b23.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/account.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="form">
+            <h2>Create an Account Here</h2>
+            <!-- <div class="icon">
+                <i class="fa-solid fa-user"></i>
+            </div> -->
+            <form action="index.html">
+                <div class="InputName">
+                    <label for="name">Name</label>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="User Name" required>
+                </div>
+                <div class="InputEmail">
+                    <label for="name">Email</label>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email ID " required>
+                </div>
+                <div class="InputPassword">
+                    <label for="password">Password</label>
+                    <i class="fa-sharp fa-solid fa-lock" id="passcodeShow"></i>
+                    <input type="password" placeholder="Create a Password" required id="passcodeInput">
+                </div>
+                <div class="checks">
+                    <div class="credential">
+                        <input type="checkbox" name="" id="checkBox" required>
+                        <button class="remeberMe"><a href="#" target="_blank">Agree to Our terms and Conditions</a></button>
+                    </div>
+                </div>
+                <div class="login">
+                    <button class="signUp-btn">Register</button>
+                    <button class="login-btn"><a href="loginpage.html" target="_blank">Log In</a></button>
+                </div>
+        </div>
+    </form>
+    </div>
+    <script src="js/account.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --white-color: #fff;
+    --semi-white-color: antiquewhite;
+    --orange-color: #ffa500;
+    --dark-color: #020202;
+    --gray-color:  rgb(206, 206, 202);
+    --grren-color: #8ee88c;
+    --ash-white-smooth-color: #eaf6f6;
+    --dark-blue-color: rgb(15, 45, 82);
+}
+body{
+    font-family: 'Familjen Grotesk', sans-serif;
+    /* font-family: 'Jost', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif; */
+    /* background-color: rgb(175 175 160); */
+    /* background-color: var(--white-color); */
+    background-color: var(--ash-white-smooth-color);
+}
+.customersHeader{
+    margin: 10px;
+    text-align: center;
+    font-size: 1.7rem;
+}
+.customerComments{
+    display: flex;
+    justify-content: center;
+    color: var(--white-color);
+}
+.customer1, .customer2, .customer3{
+    margin: 10px;
+    word-spacing: 5px;
+    padding: 10px;
+    background-color: var(--dark-blue-color);
+    border-radius: 10px;
+}
+.customer1Info, .customer2Info, .customer3Info{
+    position: relative;
+    left: 90px;
+    width: 160px;
+}
+.customer3Info p i{
+    color: var(--grren-color);
+}
+.customer1Info p i{
+    color: var(--grren-color);
+}
+.customer2Info p i{
+    color: var(--grren-color);
+}
+ .customer3  i{
+    color: var(--orange-color);
+}
+.customer1 i{
+    color: var(--orange-color);
+}
+.customer2 I{
+    color: var(--orange-color);
+  
+}
+
+.customer1Img, .customer2Img, .customer3Img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+@media (width <=768px){
+    /* *{
+        overflow-x: hidden;
+    } */
+    .customerComments{
+        display: block;
+        text-align: center;
+        /* position: relative;
+        left: 20px; */
+    }
+    .customer1, .customer2, .customer3{
+        margin: 15px;
+    } 
+}
+
+@media (width =820px){
+    .customer1Info, .customer2Info, .customer3Info{
+        position: relative;
+        left: 50px;
+        width: 160px;
+    }
+    .customer1, .customer2, .customer3{
+        margin: 5px;
+        word-spacing: 5px;
+        padding: 10px;
+        background-color: var(--dark-blue-color);
+        border-radius: 10px;
+    }
+}

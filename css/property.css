@@ -1,0 +1,95 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --white-color: #fff;
+    --semi-white-color: antiquewhite;
+    --orange-color: #ffa500;
+    --dark-color: #020202;
+    --gray-color:  rgb(175 175 160);
+    --grren-color: #8ee88c;
+    --ash-white-smooth-color: #eaf6f6;
+    --dark-blue-color: rgb(2, 2, 55);
+}
+body{
+    font-family: 'Familjen Grotesk', sans-serif;
+    /* font-family: 'Jost', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif; */
+    /* background-color: rgb(175 175 160); */
+    /* background-color: var(--white-color); */
+    background-color: var(--ash-white-smooth-color);
+}
+.parentContainer{
+    padding: 20px;
+}
+.Moreproperties{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.Moreproperties div img{
+    width: 300px;
+    margin: 10px;
+}
+.Moreproperties div img:hover{
+    cursor: pointer;
+    /* transform:  translateX(10px); */
+    filter: brightness(70%);
+}
+.home1Info, .home2Info, .home3Info{
+    margin-left: 25px;
+    width: 50%;
+}
+.home1Info i, .home2Infon i, .home3Info i{
+    color: var(--grren-color);
+}
+.home1Info button i, .home2Infon button i, .home3Info button i{
+    font-size: 20px;
+    margin: 5px;
+}
+.btnPriceText{
+    border: none;
+    font-weight: bold; 
+    background-color: transparent;
+}
+
+.btnPriceTag{
+    position: relative;
+    left: 150px;
+    height: 30px;
+    width: 55px;
+    color: var(--white-color);
+    border: none;
+    background: var(--dark-blue-color);
+    font-weight: bold;
+    border-radius: 5px;
+}
+.btnPriceTag:hover{
+    cursor: pointer;
+    /* box-shadow:  5px 10px 15px rgb(69, 69, 206); */
+    background-color: rgb(69, 69, 206);
+    transition: all .7s;
+    text-decoration: underline;
+    transform: translateX(15px);
+}
+@media (width <=760px){
+    .Moreproperties{
+        display: block;
+    }
+    .home1Info, .home2Info, .home3Info{
+        margin-left: 15px;
+        width: 50%;
+    }
+}
+@media (width =768px){
+    .Moreproperties{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+

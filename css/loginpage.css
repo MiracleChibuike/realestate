@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --white-color: #fff;
+    --semi-white-color: antiquewhite;
+    --orange-color: #ffa500;
+    --dark-color: #020202;
+    --gray-color:  rgb(206, 206, 202);
+    --grren-color: #8ee88c;
+    --ash-white-smooth-color: #eaf6f6;
+    --dark-blue-color: rgb(237, 238, 236);
+}
+body{
+    font-family: 'Familjen Grotesk', sans-serif;
+    /* font-family: 'Jost', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif; */
+    /* background-color: rgb(175 175 160); */
+    /* background-color: var(--white-color); */
+    background-image: url(../images/home5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    /* height: 500px; */
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+.mainContainer{
+    background-color: var(--gray-color);
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Familjen Grotesk', sans-serif;
+}
+h2{
+    margin: 10px;
+}
+.InputName input{
+    width: 250px;
+    height: 30px;
+    margin: 25px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-size: 15px;
+}
+.InputPassword input{
+    width: 250px;
+    height: 30px;
+    margin: 25px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-size: 15px;
+    position: relative;
+    left: 60px;
+    bottom: 50px;
+    /* z-index: 100; */
+ } 
+ .InputPassword i{ 
+    position: relative;
+    left: 15px;
+    z-index: 100;
+ } 
+::placeholder{
+    color: var(--orange-color);
+    opacity: 0.7;
+    font-size: 10px;
+}
+.InputName i{
+    position: relative;
+    left: 45px;
+    font-size: 15px;
+}
+.remeberMe{
+    border: none;
+    
+    background-color: transparent;
+    margin-left: 10px;
+}
+.remeberMe a{
+    color: var(--dark-color);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Familjen Grotesk', sans-serif;
+}
+.remeberMe a:hover{
+    text-decoration: underline;
+    transition: all .8s;
+}
+.login{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.login button{
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to right, #f1043b, #ffa500);
+    color: var(--white-color);
+    font-weight: bold;
+}
+.login button a{
+    color: var(--white-color);
+}
+.login button:hover{
+    transition: all .7s;
+    text-decoration: underline;
+    background-image: linear-gradient(to right,  #ffa500, #e60505);
+    border: 2px solid var(--orange-color);
+    cursor: pointer;
+}
+@media (width <=720px){
+    body{
+        overflow: hidden;
+    }
+    .mainContainer{
+        height: 400px;
+        width: 300px;
+    }
+    .InputPassword input{
+        position: relative;
+        left: -2px;
+        top: 10px;
+    }
+    .InputName i{
+        position: relative;
+        top: 50px;
+        left: -20px;
+        font-size: 15px;
+    }
+    .InputPassword i{
+        position: relative;
+        top: 60px;
+        z-index: 100;
+        left: -50px;
+    }
+}
