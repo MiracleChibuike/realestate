@@ -28,6 +28,10 @@ body{
     /* background-color: var(--white-color); */
     background: var(--ash-white-smooth-color);
 }
+/* Main- Container  */
+.main-container{
+    width: auto;
+}
 /* NAV-SECTION */
 .navs{
     display: flex;
@@ -263,6 +267,10 @@ body{
 .ourTeam{
     margin-left: -10px;
 }
+.ourTeam p{
+    text-align: justify;
+    line-height: 1.7;
+}
 .ourTeam button{
     width: 120px;
     height: 35px;
@@ -322,15 +330,17 @@ body{
     margin-right: 0;
     margin-bottom: 0;
     display: flex;
+    justify-content: space-evenly;
     background-color: var(--smoth-main-color);
-    max-width: 100%;
+    /* max-width: 100%; */
 }
-.contactMessage{
+/* .contactMessage{
     margin-left: 300px;
     width: 600px;
-}
+} */
 .contactLinks{
     padding: 10px;
+    /* width: 700px; */
 }
 .contactHeader, .messageHeader{
     font-size: 2.5rem;
@@ -354,7 +364,7 @@ body{
     border-right: none;
     border-bottom: 2px solid var(--dark-color);
     background-color: transparent;
-    width: 500px;
+    width: auto;
 }
 #emailInput:hover{
     border-color: var(--orange-color);
@@ -401,18 +411,9 @@ body{
     margin: 15px;
     font-size: 20px;
 }
-hr{
-    border-style: none;
-    border-top-style: dotted;
-    padding: 10px;
-    border-top-width: 4px;
-    color: rgb(214, 212, 212);
-}
 /* FOOTER SECTION */
 .foot{
-    /* background-color: var(--dark-blue-color); */
     background-color: var(--dark-color);
-    /* color: var(--white-color); */
     text-align: center;
     padding: 20px;
     color: var(--white-color);
@@ -482,7 +483,7 @@ footer i:hover{
     transition: .7s;
     transform: translateY(-10px);
 }
-@media only screen and (max-width: 700px){
+@media  (width <= 700px){
     /* NAV-SECTION */
     .nav-links{
         display: none;
@@ -542,6 +543,7 @@ footer i:hover{
         left: 0;
         right: 0;
         z-index: -1;
+        background-color: red;
     }
     .homeContainer{
         position: relative;
@@ -610,13 +612,13 @@ footer i:hover{
     #contact{
         display: block;
         position: absolute;
-        top: 4100px;
-        margin: 0;
+        top: 4080px;
+        /* margin: 0; */
         padding: 10px;
     }
     .contactMessage{
         margin-left: 10px;
-        width: auto;
+        /* width: auto; */
     }
     #nameInput,#emailInput, #messageAreaInput{
         width: 250px;
@@ -635,7 +637,7 @@ footer i:hover{
     }
 
 }
-@media only screen and (max-width: 912px) and (min-width: 768px){
+@media (max-width: 994px) and (min-width: 761px){
     /* NAV-SECTION MEDIA QUERRY IPAD AIR */
     .nav-links{
         display: none;
@@ -733,10 +735,8 @@ footer i:hover{
     }
      /* CONTACT-SECTION */
      /* #contact{
-        display: block;
-        position: absolute;
-        top: 4250px;
-        margin: 10px;
+       max-width: 100%;
+       background-color: red;
     } */
     .contactMessage{
         margin-left: 100px;
@@ -754,7 +754,7 @@ footer i:hover{
     }
 
 }
-@media  (width =1024px){
+@media (width = 1024px){
     .homeContainer{
         width: 50%;
         height: 200px;
