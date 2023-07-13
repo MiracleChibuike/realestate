@@ -452,9 +452,9 @@ footer p{
    
 }
 footer i{
-    font-size: 25px;
-    width: 50px;
-    height: 50px;
+    font-size: 20px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background-color: var(--dark-blue-color);
     color: var(--white-color);
@@ -466,12 +466,12 @@ footer i:hover{
     transform: translateY(-15px);
 }
 .chatBot i{
-    font-size: 40px;
+    font-size: 30px;
     background-color: rgb(29, 223, 29);
     color: var(--white-color);
     padding: 10px;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     position: fixed;
     bottom: 0;
@@ -626,14 +626,14 @@ footer i:hover{
     /* Footer section */
     .foot{
         position: absolute;
-        top: 4820px;
+        top: 4890px;
         width: 100%;
     }
     .chatBot i{
         font-size: 35px;
         width: 60px;
         height: 60px;
-        margin-left: 120px;
+        margin-left: 115px;
     }
 
 }
