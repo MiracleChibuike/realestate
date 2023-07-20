@@ -631,7 +631,7 @@ footer i:hover{
     #contact{
         display: block;
         position: absolute;
-        top: 4080px;
+        top: 4390px;
         /* margin: 0; */
         padding: 10px;
     }
@@ -645,7 +645,7 @@ footer i:hover{
     /* Footer section */
     .foot{
         position: absolute;
-        top: 4900px;
+        top: 5200px;
         width: 100%;
     }
     footer i{
