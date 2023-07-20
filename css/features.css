@@ -1,0 +1,28 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+:root{
+    --white-color: #fff;
+    --semi-white-color: antiquewhite;
+    --orange-color: #ffa500;
+    --dark-color: #020202;
+    --gray-color:  rgb(206, 206, 202);
+    --grren-color: #3bdc38;
+    --ash-white-smooth-color: #eaf6f6;
+    --dark-blue-color: rgb(237, 238, 236);
+}
+body{
+    font-family: 'Familjen Grotesk', sans-serif;
+    background: var(--ash-white-smooth-color);
+}
+.mainContainer{
+    margin: 15px;
+}
+.container-features{
+    line-height: 2;
+    text-align: justify;
+    font-size: 17px;
+}

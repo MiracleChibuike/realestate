@@ -144,7 +144,7 @@ body{
     margin: 10px;
     box-shadow: 10px 10px 15px var(--gray-color);
     animation-name: shine;
-    animation-iteration-count: 2;
+    animation-iteration-count: 1;
     animation-duration: 7s;
 }
 .houseCategoty1 img:hover{
@@ -157,14 +157,9 @@ body{
     0%{
         transform: rotateY(0deg);
     }
-    50%{
-        transform: rotateY(90deg);
-    }
-    75%{
-        transform: rotateY(-90deg);
-    }
+    50%, 75%,
     100%{
-        transform: rotateY(90deg);
+        transform: rotate(360deg);
     }
 }
 .home1Info, .home2Info, .home3Info{
@@ -483,6 +478,32 @@ footer i:hover{
     transition: .7s;
     transform: translateY(-10px);
 }
+/* Style for google translate page */
+#google_translate_element{
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 50%;
+}
+.goog-te-combo{
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: 'Familjen Grotesk', sans-serif;
+}
+.goog-te-combo:hover{
+    outline: 2px solid var(--smoth-main-color);
+    cursor: pointer;
+
+}
+/* .goog-te-combo input{
+    background-color: transparent;
+
+} */
+#google_translate_element input{
+    color: red;
+    width: 30px;
+}
 @media  (width <= 700px){
     /* NAV-SECTION */
     .nav-links{
@@ -494,28 +515,25 @@ footer i:hover{
         background-color: var(--semi-white-color);
         transition: all .7s;
         animation-name: bounce;
-        animation-iteration-count: 2;
+        animation-iteration-count: 1;
         animation-duration: 7s;
         z-index: -1;
     }
     @keyframes bounce {
         0%{
-            transition: all 0s;
+            transform: rotateY(0deg);
+            transition: .7s ease-in-out;
         }
-        50%{
-            transform: translateY(10px);
-        }
-        75%{
-            transform: translateX(-10px);
-        }
+        50%, 75%,
         100%{
-            transform: translateX(10px);
+            transform: rotate(360deg);
         }
     }
     .nav-links a{
         display: block;
         padding: 15px;
         text-align: center;
+        padding: 25px;
     }
     .navIcon{
         display: block;
@@ -628,6 +646,11 @@ footer i:hover{
         position: absolute;
         top: 4900px;
         width: 100%;
+    }
+    footer i{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
     }
     .chatBot i{
         font-size: 35px;
