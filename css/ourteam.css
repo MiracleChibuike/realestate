@@ -30,10 +30,10 @@ body{
 .ParentContainer {
     padding-top: 45px;
 }
-.teamsContainer{
+/* .teamsContainer{
     display: flex;
     justify-content: center;
-}
+} */
 .Ourteamheader{
     font-size: 2.5rem;
     text-align: center;
