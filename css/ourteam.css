@@ -27,6 +27,13 @@ body{
 /* ::-webkit-scrollbar{
     background-color: var(--ash-white-smooth-color);
 } */
+.ParentContainer {
+    padding-top: 45px;
+}
+.teamsContainer{
+    display: flex;
+    justify-content: center;
+}
 .Ourteamheader{
     font-size: 2.5rem;
     text-align: center;

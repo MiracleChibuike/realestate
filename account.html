@@ -10,9 +10,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/9b5c4c6b23.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <div class="mainContainer">
+        <div class="navs">
+            <h1 class="nav-header-logo"><span>E</span>xcel<span>.</span></h1>
+            <div class="navIcon">
+                <i class="fa-solid fa-bars" onclick="toggler ()" ></i>
+            </div>
+            <!-- NAV-LINKS CONTAINER -->
+            <div class="nav-links">
+                <a href="index.html#home" class="active-link">Home</a>
+                <a href="index.html#property">Property</a> 
+                <a href="index.html#about" class="good">About <i class="fa-solid fa-caret-down" onclick="ToggleCollapse()"></i>
+                    <div class="others">
+                        <a href="ourteam.html" target="_blank" >Our Team</a>
+                        <a href="customers.html" target="_blank" >What Our Customers say</a>
+                        <a href="feautures.html" target="_blank" >Key Feautures</a>
+                        <a href="http://" target="_blank" >Support</a>
+                    </div>
+                </a> 
+                <a href="account.html" target="_blank"><i class="fa-solid fa-user-plus"></i>  </a>
+                <a href="index.html#contact" >Contact</a>
+                <a href="tel:+2347043382546" id="phoneCall"><i class="fa-solid fa-phone" ></i> +234 (0) 704 338 2546</a>
+            </div>
+            <!-- NAV-LINKS CONTAINER -->
+        </div>
         <div class="form">
             <h2>Create an Account Here</h2>
             <!-- <div class="icon">
@@ -47,6 +71,7 @@
         </div>
     </form>
     </div>
+    
     <script src="js/account.js"></script>
 </body>
 </html>

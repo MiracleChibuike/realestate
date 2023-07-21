@@ -26,10 +26,12 @@ body{
 }
 .parentContainer{
     padding: 20px;
+    margin-top: 30px;
 }
 .Moreproperties{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 10px;
 }
 .Moreproperties div img{
     width: 300px;

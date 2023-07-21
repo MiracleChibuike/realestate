@@ -20,6 +20,12 @@ body{
 }
 .mainContainer{
     margin: 15px;
+    padding: 10px;
+}
+.header{
+    margin: 25px;
+    text-align: center;
+    font-size: 2.5rem;
 }
 .container-features{
     line-height: 2;

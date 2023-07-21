@@ -4,16 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExcelHousing Feautures</title>
+
+        <!-- font-awesome link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/9b5c4c6b23.js" crossorigin="anonymous"></script>
         <!-- Google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500&family=Jost:wght@400;500&family=Montserrat&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/features.css">
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <div class="mainContainer">
-        <h2>Explore Our Key Feautures</h2>
+            <!-- NAV-SECTION -->
+            <div class="navs">
+                <h1 class="nav-header-logo"><span>E</span>xcel<span>.</span></h1>
+                <div class="navIcon">
+                    <i class="fa-solid fa-bars" onclick="toggler ()" ></i>
+                </div>
+                <!-- NAV-LINKS CONTAINER -->
+                <div class="nav-links">
+                    <a href="index.html#home" class="active-link">Home</a>
+                    <a href="index.html#property">Property</a> 
+                    <a href="index.html#about" class="good">About <i class="fa-solid fa-caret-down" onclick="ToggleCollapse()"></i>
+                        <div class="others">
+                            <a href="ourteam.html" target="_blank" >Our Team</a>
+                            <a href="customers.html" target="_blank" >What Our Customers say</a>
+                            <a href="feautures.html" target="_blank" >Key Feautures</a>
+                            <a href="http://" target="_blank" >Support</a>
+                        </div>
+                    </a> 
+                    <a href="account.html" target="_blank"><i class="fa-solid fa-user-plus"></i>  </a>
+                    <a href="index.html#contact" >Contact</a>
+                    <a href="tel:+2347043382546" id="phoneCall"><i class="fa-solid fa-phone" ></i> +234 (0) 704 338 2546</a>
+                </div>
+                <!-- NAV-LINKS CONTAINER -->
+            </div>
+        <h2 class="header">Explore Our Key Feautures</h2>
        <div class="container-features">
         <ul>
             <li> <strong>Prime Location:</strong>
@@ -65,7 +95,53 @@
             </p>
         </div>
        </div>
-    </div>
+               <!-- FOOTER SECTION -->
+               <div class="foot">
+                <!-- <hr> -->
+                  <!-- SOCIAL MEDIA ICONS CONTAINER-SECTION -->
+                  <div class="socialMediaIcons">
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <!-- Quick-nav-links footer container -->
+                    <div class="footer-nav-quickLinks">
+                    <a href="index.html#home">Home</a>
+                    <a href="index.html#property">Property</a>
+                    <a href="index.html#about">About</a>
+                    <a href="account.html">Account</a>
+                    <a href="index.html#contact">Contact</a>
+                    </div>
+                  <!-- Quick-nav-links footer container -->
+                <footer>
+                    <p> &copy; 2023 Copyright of Excel Estate...</p> <br>
+                    <p>All Rights Reserved</p>
+                    <a href="index.html#home"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
+                </footer>
+               
+                <!-- chatbot icon section -->
+                <div class="chatBot">
+                   <a href="https://wa.me/+2347043382546"> <i class="fa-solid fa-comments"></i></a>
+                </div>
+              
+                <p>You can translate the content of this page by selecting a language in the select box.</p>
     
+    <div id="google_translate_element"></div>
+    
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <!-- ADDING A GOOGLE TRANSLATE PAGE USING GOOGLE API -->
+    
+    
+            </div>
+    </div>
+    <!-- global js link -->
+    <script src="js/index.js"></script>
+
 </body>
 </html>
