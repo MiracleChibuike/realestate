@@ -1,8 +1,8 @@
-/* *{
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-} */
+}
 
 :root{
     --white-color: #fff;
@@ -19,8 +19,8 @@ body{
     background: var(--ash-white-smooth-color);
 }
 .mainContainer{
-    margin: 15px;
     padding: 10px;
+    margin-top: 15px;
 }
 .header{
     margin: 25px;
@@ -31,4 +31,28 @@ body{
     line-height: 2;
     text-align: justify;
     font-size: 17px;
+    margin: 15px;
+    padding: 5px;
+}
+.container-features ul{
+    list-style: lower-roman;
+}
+.globalFooter{
+    margin-top: 200px;
+}
+/* Media querry section */
+
+@media (width <=760px){
+    /* body{
+        overflow-x: hidden;
+    } */
+    .mainContainer{
+        overflow-x: hidden;
+    }
+    .globalFooter{
+        position: absolute;
+        bottom: 5000px;
+        left: 0;
+        right: 0;
+    }
 }

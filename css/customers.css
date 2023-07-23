@@ -23,6 +23,9 @@ body{
     /* background-color: var(--white-color); */
     background-color: var(--ash-white-smooth-color);
 }
+.mainContainer{
+    margin-top: 50px;
+}
 .customersHeader{
     margin: 10px;
     text-align: center;
@@ -70,6 +73,9 @@ body{
     height: 100px;
     border-radius: 50%;
 }
+.globalFooter{
+    margin-top: 100px;
+}
 @media (width <=768px){
     /* *{
         overflow-x: hidden;
@@ -83,6 +89,12 @@ body{
     .customer1, .customer2, .customer3{
         margin: 15px;
     } 
+    .globalFooter{
+        position: absolute;
+        bottom: 4700px;
+        left: 0;
+        right: 0;
+    }
 }
 
 @media (width =820px){

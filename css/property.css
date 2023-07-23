@@ -23,6 +23,7 @@ body{
     /* background-color: rgb(175 175 160); */
     /* background-color: var(--white-color); */
     background-color: var(--ash-white-smooth-color);
+    overflow-x: hidden;
 }
 .parentContainer{
     padding: 20px;
@@ -78,6 +79,7 @@ body{
     text-decoration: underline;
     transform: translateX(15px);
 }
+
 @media (width <=760px){
     .Moreproperties{
         display: block;
@@ -86,8 +88,14 @@ body{
         margin-left: 15px;
         width: 50%;
     }
+    .globalFooter{
+        position: absolute;
+        bottom: 3200px;
+        left: 0;
+        right: 0;
+    }
 }
-@media (width =768px){
+@media (min-width: 768px) and (max-width: 820px){
     .Moreproperties{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
