@@ -295,24 +295,10 @@ body{
     height: 300px;
     border-radius: 50%;
     margin-top: 15px;
-    animation-name: teamanimate;
+    /* animation-name: teamanimate;
     animation-iteration-count: 5;
-    animation-duration: 7s;
+    animation-duration: 7s; */
 
-}
-@keyframes teamanimate {
-    0%{
-        transform: rotate(0);
-    }
-    25%{
-        transform: rotateX(360deg);
-    }
-    50%{
-        transform: rotateX(360deg);
-    }
-    100%{
-        transform: rotateX(180deg);
-    }
 }
 .teamImage{
     width: 280px;
@@ -516,11 +502,11 @@ footer i:hover{
         background-color: var(--semi-white-color);
         transition: all .7s;
         animation-name: bounce;
-        animation-iteration-count: 1;
-        animation-duration: 7s;
+        /* animation-iteration-count: 1;
+        animation-duration: 7s; */
         z-index: -1;
     }
-    @keyframes bounce {
+    /* @keyframes bounce {
         0%{
             transform: rotateY(0deg);
             transition: .7s ease-in-out;
@@ -529,7 +515,7 @@ footer i:hover{
         100%{
             transform: rotate(360deg);
         }
-    }
+    } */
     .nav-links a{
         display: block;
         padding: 15px;
@@ -736,29 +722,18 @@ footer i:hover{
     .aboutContainerMain{
         display: block;
     }
-    /* .aboutUsText{
-        text-align: center;
-    } */
     .ourTeam{
         margin-top: 20px;
     }
     .teamImageContainer{
         margin-left: 200px;
     }
-    /* .teamImage{
-        margin-left: px;
-    } */
     .ourTeam button{
         width: 110px;
         height: 35px;
         margin-top: 10px;
         margin-left: 320px;
     }
-     /* CONTACT-SECTION */
-     /* #contact{
-       max-width: 100%;
-       background-color: red;
-    } */
     .contactMessage{
         margin-left: 100px;
         width: 300px;
